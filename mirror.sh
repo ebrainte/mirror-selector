@@ -11,7 +11,7 @@ fi
 
 echo "Checking Ubuntu Version"
 UB_VERSION=$(lsb_release -c | awk '{print $2}')
-if [[ $UB_VERSION != saucy ]] && [[ $UB_VERSION != raring ]] && [[ $UB_VERSION != precise ]]; then
+if [[ $UB_VERSION != saucy ]] && [[ $UB_VERSION != raring ]] && [[ $UB_VERSION != precise ]] && [[ $UB_VERSION != trusty ]]; then
 	echo "You need Ubuntu to use this script"
 	exit 1
 fi
