@@ -37,7 +37,6 @@ if [[ $1 == office ]]; then
 	sed -i "s/\$VERSION/$UB_VERSION/" /etc/apt/sources.office
 	fi
 	
-	mv /etc/apt/sources.list /etc/apt/sources.list.bak
 	cp /etc/apt/sources.office /etc/apt/sources.list
 	echo "Success!"
 fi
